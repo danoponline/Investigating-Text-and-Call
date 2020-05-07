@@ -18,7 +18,7 @@ How many different telephone numbers are there in the records?
 Print a message:
 "There are <count> different telephone numbers in the records."
 """
-#This list is for collecting distinct phone number is all the records
+#This list is for collecting distinct phone numbers in all the records
 number_distinct_list =[]
 
 #For loop to go through each line in texts
