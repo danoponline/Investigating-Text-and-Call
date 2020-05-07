@@ -1,0 +1,1 @@
+Task0.py: Worst case runtime complexity is O(n) where n is the number of lines of the input file
