@@ -8,7 +8,11 @@ Task1.py: Worst case runtime complexity is O(n^2) where n is the number of lines
     - Count and print result: O(1)
 
 Task2.py: Worst case runtime complexity is O(n^2) where n is the number of lines of the input files
-
+    - Create texts and calls list: O(n)
+    - Create dictionary and accumulate call duration for distinct phone number: O(n^2)
+    - Look for the number with the longest duration in dictionary: O(n)
+    - Print result: O(1)
+    
 Task3.py: Worst case runtime complexity is O(n^2) where n is the number of lines of the input files
     - Create texts and calls list: O(n)
     - Go though calls list to find all distict area code from call from Bangalore: O(n^2)

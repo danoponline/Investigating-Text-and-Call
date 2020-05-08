@@ -24,6 +24,7 @@ September 2016.".
 cumulative_distinct_dic = {}
 
 # For loop to go through each line in calls
+# Worst-case time complexity is O(n^2)
 for line in calls:
    
     # Only for the first line in calls
@@ -44,7 +45,8 @@ for line in calls:
         else:
             cumulative_distinct_dic[line[1]] += int(line[3])
 
-# Looking for the number with the longest duration
+# Looking for the number with the longest duration in dictionary
+# Worst-case time complexity is O(n)
 longest_duration = None
 talk_longest_phone_number = None
 for phoneNumber in cumulative_distinct_dic:
@@ -55,7 +57,7 @@ for phoneNumber in cumulative_distinct_dic:
             longest_duration = cumulative_distinct_dic[phoneNumber]
             talk_longest_phone_number = phoneNumber
 
-# Print result on console
+# Print result on console. Worst-case time complexity is O(1)
 txt = talk_longest_phone_number + " spent the longest time, " + format(longest_duration) + \
     " seconds, on the phone during September 2016."
 print(txt)
