@@ -72,7 +72,7 @@ total_call_from_Bangalore = 0
 receiving_is_Bangalore = 0
 
 # Go through calls list
-# This loop has time complexity of O(n)
+# This loop has worst-case time complexity of O(n^2)
 for line in calls:
   if isCallingFromBangalore(line):
     total_call_from_Bangalore += 1
@@ -90,11 +90,11 @@ for line in calls:
       if area_code not in list_of_codes:
         list_of_codes.append(area_code)
 
-# This sorted function has time complexity of O(nlog n)
+# This sorted function has worst-case time complexity of O(nlog n)
 list_of_codes = sorted(list_of_codes)
 
 # Print sorted area codes and mobile prefixes called by people in Bangalore
-# Worst case time complexity is O(n)
+# Worst-case time complexity is O(n)
 txt = "The numbers called by people in Bangalore have codes:\n"
 for code in list_of_codes:
   txt += code + "\n"
