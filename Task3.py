@@ -101,6 +101,7 @@ for code in list_of_codes:
 print(txt)
 
 # Compute percentage and print result
+# Worst-case time complexity is O(1)
 percentage = float(receiving_is_Bangalore)/float(total_call_from_Bangalore)*100.00
 txt = "{:.2f}".format(percentage) + " percent of calls from fixed lines" + \
    " in Bangalore are calls to other fixed lines in Bangalore."
