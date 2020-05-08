@@ -3,6 +3,9 @@ Task0.py: Worst case runtime complexity is O(n) where n is the number of lines o
     - Assemble text and print on console: O(1)
 
 Task1.py: Worst case runtime complexity is O(n^2) where n is the number of lines of the input files
+    - Create texts and calls list: O(n)
+    - Go though calls and texts list to find all distinct phone number: O(n^2)
+    - Count and print result: O(1)
 
 Task2.py: Worst case runtime complexity is O(n^2) where n is the number of lines of the input files
 
