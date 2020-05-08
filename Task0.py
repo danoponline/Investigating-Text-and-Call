@@ -19,11 +19,13 @@ Print messages:
 "First record of texts, <incoming number> texts <answering number> at time <time>"
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 """
-#Assemble printing text
+# Assemble printing text
+# Worst-case time complexity is O(1)
 text_first = "First record of texts, " + texts[0][0] + " texts " + texts[0][1] + " at time " + texts[0][2]
 call_last = "Last record of calls, " + calls[len(calls)-1][0] + " calls " + calls[len(calls)-1][1] + \
     " at time " + calls[len(calls)-1][2] + ", lasting " + calls[len(calls)-1][3] + " seconds"
 
-#Print on console
+# Print on console
+# Worst-case time complexity is O(1)
 print(text_first)
 print(call_last)
