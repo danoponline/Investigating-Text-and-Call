@@ -73,6 +73,10 @@ receiving_is_Bangalore = 0
 
 # Go through calls list
 # This loop has worst-case time complexity of O(n^2)
+# Comment from mentor: Instead of checking first before appending:
+# you could append to the list first(complexity: O(1))
+# after the loop is over, you can change the list to a set( complexity: 0(n))
+# This should reduce the time complexity to O(n)
 for line in calls:
   if isCallingFromBangalore(line):
     total_call_from_Bangalore += 1
@@ -99,6 +103,8 @@ txt = "The numbers called by people in Bangalore have codes:\n"
 for code in list_of_codes:
   txt += code + "\n"
 print(txt)
+# Comment from mentor: this print can be simplified to
+# print("The numbers called by people in Bangalore have codes:",*list_of_codes,sep="\n")
 
 # Compute percentage and print result
 # Worst-case time complexity is O(1)

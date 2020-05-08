@@ -28,6 +28,12 @@ The list of numbers should be print out one per line in lexicographic order with
 # Create a list of phone number that is not telemarketing by appending all the distinct number
 # from texts list and receiving number in calls list
 # Worst-case time complexity is O(n^2)
+
+# Comments from mentor: instead of checking first before appending:
+# you could append to the list first(complexity: O(1))
+# after the loop is over, you can change the list to a set( complexity: 0(n))
+# This should reduce the time complexity to O(n)
+
 def creatNotTeleMarketList(texts_list,calls_list):
     not_telemarket_list = []
     
@@ -64,6 +70,12 @@ not_telemarket_list = creatNotTeleMarketList(texts,calls)
 
 # Loop in calls list
 # Worst-case time complexity of this loop is O(n^3)
+
+# Comment from mentor: instead of checking first before appending:
+# you could append to the list first(complexity: O(1))
+# after the loop is over, you can change the list to a set( complexity: 0(n))
+# This should reduce time complexity to O(n^2)
+
 for line in calls:
     if line[0] not in not_telemarket_list:
         if len(potential_telemarket_list) == 0:
@@ -81,5 +93,7 @@ txt = "These numbers could be telemarketers: \n"
 for number in sorted(potential_telemarket_list):
     txt += number + "\n"
 print(txt)
+# Comment from mentor: this print can be simplified to
+# print("These numbers could be telemarketers:",*potential_telemarket_list,sep="\n")
 
 

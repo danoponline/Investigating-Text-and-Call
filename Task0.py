@@ -29,3 +29,7 @@ call_last = "Last record of calls, " + calls[len(calls)-1][0] + " calls " + call
 # Worst-case time complexity is O(1)
 print(text_first)
 print(call_last)
+
+# Comment from mentor: The print function can be simplified to the following
+# print("First record of texts, {} texts {} at time {}".format(*texts[0]))
+# print("Last record of calls, {} calls {} at time {}, lasting {} seconds".format(*calls[-1]))
