@@ -1,4 +1,15 @@
 Task0.py: Worst case runtime complexity is O(n) where n is the number of lines of the input files
+
 Task1.py: Worst case runtime complexity is O(n^2) where n is the number of lines of the input files
+
 Task2.py: Worst case runtime complexity is O(n^2) where n is the number of lines of the input files
+
 Task3.py: Worst case runtime complexity is O(n log n) where n is the number of lines of the input files
+
+Task4.py: Worst case runtime complexity is O(n^3) where n is the number of lines of the input files
+    - Create texts and calls list: )(n^2)
+    - Create not_telemarket_list: O(n^2)
+    - Check if the calling number is not in not_telemarket_list and generate the distinct potential 
+      telemarket number: O(n^3)
+    - Sort list: O(n log n)
+    - Print on console: O(n)
