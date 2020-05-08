@@ -41,7 +41,7 @@ for index in range(len(calls)):
         number_distinct_list.append(calls[index][0])
     else:
         #Hidden nested loop here to go through each element in number_distinct_list
-        #Worst case can be the same length as the number of line in calls
+        #Worst case can be the same length as the number of line in calls + texts
         if calls[index][0] not in number_distinct_list:
             number_distinct_list.append(calls[index][0])
     
